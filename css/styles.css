@@ -1,4 +1,7 @@
 /* Estilos generales */
+* {
+  font-family: 'Handlee','Raleway', cursive;
+}
 .blanco {
   background: rgb(220, 215, 205);
   border-radius: 10px;
@@ -21,6 +24,9 @@ header {
 nav ul {
   padding-left: 0;
   list-style-type: none;
+}
+nav a{
+    text-decoration: none;
 }
 
 /* Estilos del cuerpo */
@@ -60,8 +66,8 @@ body, main, header, footer {
 }
 
 .titulo_principal {
-  font-family: 'Dancing Script', cursive;
-  font-family: 'Square Peg', cursive;
+  font-family: 'Dancing Script','Square Peg', cursive;
+
 }
 
 .titulos_tarjetas{
@@ -98,8 +104,17 @@ body, main, header, footer {
 aside {
   padding-right: 25px;
 }
-/* main {
-  width: 73vw;
+/* Estilos de la pagina de quotes */
+div p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+}
+.quotes .tarjeta {
+  width: 41%;
+}
+/* .contenedor {
+  border: 0.5px, black, solid;
+  border-radius: 10px;
 } */
 
 /*pc*/
@@ -138,22 +153,31 @@ aside {
 
 /*tablet*/
 @media (max-width:1024px) {
-  .img-libro img, .tarjeta_titulo{
+  .img-libro img, .titulos_tarjetas{
     width: 75%; 
   }  
-  .tarjeta_titulo{
+  .titulos_tarjetas{
     height: 25px;
   }  
+  .nav_links {
+    text-align: center;
+  }
+  .quotes .tarjeta {
+    width: 100%;
+  }
 }
 
 /* para celulares */
 @media (max-width:768px) {
-  .img-libro img, .tarjeta_titulo{
+  .img-libro img, .titulos_tarjetas{
     width: 100%; 
   }  
-  .tarjeta_titulo{
+  .titulos_tarjetas{
     height: 25px;
   }  
+  .nav_links {
+    text-align: center;
+  }
 }
 
 /* Estilos de las páginas de los libros */
@@ -169,3 +193,10 @@ iframe {
   display: block;
   border-radius: 10px;
 } 
+
+.titulos_libros {
+  font-family: 'Dancing Script','Square Peg', cursive;
+}
+main p {
+  text-align: justify;
+}

@@ -1,9 +1,9 @@
 var verMenu = function (){
-    document.querySelector('nav.menu').classList.toggle('hidden')     
+    document.querySelector('nav.menu').classList.toggle('ocultar')     
 }
 
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.btn-menu').addEventListener('click', verMenu)
+    document.querySelector('.boton-menu').addEventListener('click', verMenu)
 })
