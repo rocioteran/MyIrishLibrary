@@ -14,13 +14,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400;700&family=Handlee&family=Raleway:ital,wght@1,300&family=Square+Peg&display=swap" rel="stylesheet">
     <!-- Fin de link de Google fonts -->
+    <!-- Icono de fontawesome -->
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div class="blanco">
       <header>
           <a href="../index.html"> <img src="../imagenes/clover.png" alt="Imagen de clover" class="icono"></a>
-          <span class="boton-menu"> Menú</span>
+          <span class="boton-menu">
+            <i class="fa fa-bars"></i>
+            Menú
+            </span>
           <nav class="menu ocultar">
               <ul class="nav_links">
                   <li><a href="../index.html">Libros</a></li>
@@ -42,24 +47,24 @@
                       <a href="./html/books.html" class="img-libro"><img src="../imagenes/acotar.jpg" alt="acotar" /></a>
                     </div>
                     <div class="tarjeta">
-                      <h3 class="titulos_tarjetas">Tarjeta</h3>
-                      <p class="img-libro"><img src="../imagenes/acotar.jpg" alt="acotar" /></p>
+                      <h3 class="titulos_tarjetas">A court of Mist and Fury</h3>
+                      <p class="img-libro"><img src="../imagenes/acomaf.jpg" alt="acotar" /></p>
                     </div>
                     <div class="tarjeta">
-                      <h3 class="titulos_tarjetas">Tarjeta</h3>
-                      <p class="img-libro"><img src="../imagenes/acotar.jpg" alt="acotar" /></p>
+                      <h3 class="titulos_tarjetas">Todo lo que nunca fuimos</h3>
+                      <p class="img-libro"><img src="../imagenes/todo_lo_que_nunca_fuimos.jpg" alt="acotar" /></p>
                     </div>
                     <div class="tarjeta">
-                      <h3 class="titulos_tarjetas">Tarjeta</h3>
-                      <p class="img-libro"><img src="../imagenes/acotar.jpg" alt="acotar" /></p>
+                      <h3 class="titulos_tarjetas">The Cruel Prince</h3>
+                      <p class="img-libro"><img src="../imagenes/the_cruel_prince.jpg" alt="acotar" /></p>
                     </div>
                     <div class="tarjeta">
-                      <h3 class="titulos_tarjetas">A court of thrones and roses</h3>
-                      <p class="img-libro"><img src="../imagenes/acotar.jpg" alt="acotar" /></p>
+                      <h3 class="titulos_tarjetas">The Selection</h3>
+                      <p class="img-libro"><img src="../imagenes/the_selection.jpg" alt="acotar" /></p>
                     </div>
                     <div class="tarjeta">
-                      <h3 class="titulos_tarjetas">A court of thrones and roses</h3>
-                      <p class="img-libro"><img src="../imagenes/acotar.jpg" alt="acotar" /></p>
+                      <h3 class="titulos_tarjetas">From Blood and Ash</h3>
+                      <p class="img-libro"><img src="../imagenes/from_blood_and_ash.jpg" alt="acotar" /></p>
                     </div>
                 </div>
             </main>
@@ -67,22 +72,24 @@
                 <h4>Authors:</h4>
                 <select name="authors">
                   <option>Select</option>
-                  <option><a href="#J.K.Rowling" class="link">J.K.Rowling</a></option>
-                  <option>Sarah J. Maas</option>
-                  <option>Chrsitina Lauren</option>
+                  <option><a href="#sarahjmaas" class="link">Sarah J. Maas</a></option>
+                  <option>Holly Black</option>
                   <option>Alice Kellen</option>
-                  <option>Tabitha Suzuma</option>
+                  <option>Kiera Cass</option>
+                  <option>Jennifer L. Armentrout</option>
                   </select>
                     <ul>
-                    <a href="#J.K.Rowling" class="link"><li>J.K.Rowling</li></a>
                     <a href="#sarahjmaas" class="link"><li>Sarah J. Maas</li></a>
+                    <li>Holly Black</li>
                     <li>Alice Kellen</li>
+                    <li>Kiera Cass</li>
+                    <li>Jennifer L. Armentrout</li>
                     </ul>
                     <li id="sarahjmaas">Sarah J. Maas:
                       <ul>
                       <li>A Court of Thorns and Roses Series:
                       <ul>
-                          <li><a href="./books.html" class="link">A court of thornes and roses (2015)</a></li>
+                          <li><a href="./html/books.html" class="link">A court of thornes and roses (2015)</a></li>
                           <li>A Court of Mist and Fury (2016) </li>
                           <li>A Court of Wings and Ruin (2017) </li>
                           <li>A Court of Frost and Starlight (2018) </li>
@@ -93,7 +100,7 @@
         </div>
       
     <footer>
-        <div class="redes">
+        <div class="redes p5">
           <a href="https://www.instagram.com/myirishlibrary/" target="_blank">
             <img
               src="../imagenes/instagram (1).png"
@@ -102,10 +109,11 @@
               align="right"
               margin="auto"
               display="block"
+              class="p5"
             />
           </a>
         </div>
-        <div class="redes">
+        <div class="redes p5">
           <a href="https://www.facebook.com/MyIrishLibrary" target="_blank">
             <img
               src="../imagenes/facebook (1).png"
@@ -114,6 +122,7 @@
               align="right"
               margin="auto"
               display="block"
+              class="p5"
             />
           </a>
         </div>

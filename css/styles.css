@@ -97,13 +97,16 @@ body, main, header, footer {
   display: flex;
   flex-direction: column;
 }
+
 /* tamaño de imagenes del contenedor*/
+
 .img-libro img{
   width: 150px;
 }
 aside {
   padding-right: 25px;
 }
+
 /* Estilos de la pagina de quotes */
 div p {
   font-family: 'Amatic SC', cursive;
@@ -111,6 +114,9 @@ div p {
 }
 .quotes .tarjeta {
   width: 41%;
+}
+.autores {
+  font-style: ;
 }
 /* .contenedor {
   border: 0.5px, black, solid;
@@ -165,6 +171,9 @@ div p {
   .quotes .tarjeta {
     width: 100%;
   }
+  aside {
+    padding-left: 50px;
+  }
 }
 
 /* para celulares */
@@ -177,6 +186,9 @@ div p {
   }  
   .nav_links {
     text-align: center;
+  }
+  aside {
+    padding-left: 50px;
   }
 }
 
@@ -195,8 +207,10 @@ iframe {
 } 
 
 .titulos_libros {
-  font-family: 'Dancing Script','Square Peg', cursive;
+  font-family: 'Square Peg', cursive;
 }
 main p {
   text-align: justify;
+  font-family: 'Handlee';
 }
+
