@@ -115,10 +115,14 @@ div p {
 .quotes .tarjeta {
   width: 41%;
 }
-.autores {
-  font-style: ;
+.autores a {
+  text-decoration:none;
 }
-
+.autores:hover {
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+}
 
 /*pc*/
 @media (min-width: 1024px) {
