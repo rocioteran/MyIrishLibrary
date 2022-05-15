@@ -198,7 +198,7 @@ iframe {
   margin: auto;
   display: block;
   border-radius: 20px;
-  display: flex;
+  /* display: flex; */
 }
 
 .imagen-centrada {

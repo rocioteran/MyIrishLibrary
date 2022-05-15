@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quotes</title>
+    <title>Registrarse</title>
     <!-- Icono pequeño al lado del titulo de la pagina que se verá en la barra de navegador-->
     <link rel="icon" type="image/jpg" href="..imagenes/clover.png" sizes="64x64" /> 
     <!-- Link a la hojas de estilos -->
@@ -20,9 +20,7 @@
     <div class="blanco">
         <header>
             <a href="../index.html"> <img src="../imagenes/clover.png" alt="Imagen de clover" class="icono"></a>
-            <span class="boton-menu">
-                Menú
-            </span>
+            <span class="boton-menu"> Menú</span>
             <nav class="menu ocultar">
                 <ul class="nav_links">
                     <li><a href="../index.html">Libros</a></li>
@@ -34,41 +32,20 @@
             </nav>
         </header>
   
-        <h1 class="titulo_principal p5 texto-centrado">My Irish Library</h1>
+            <h1 class="titulo_principal p5 texto-centrado">My Irish Library</h1>
             <!-- Insertar imagen de header -->
+    <main class="formulario"></main>
         <div class="containerFLEX"> 
-            <main>
-                <div class="contenedor quotes">
-                    <div class="tarjeta">
-                    <p>“To the people who look at the stars and wish, Rhys."
-                        Rhys clinked his glass against mine. “To the stars who listen and the dreams that are answered.”
-                        <br> <span class="autores"><a href="../html/acotar.html">Sarah J. Maas</a></span> , A Court of Mist and Fury</p>
-                    </div>
-                    <div class="tarjeta">
-                    <p> “El daño es un efecto colateral de vivir.”
-                        <br> <span class="autores">Alice Kellen, Todo lo que nunca fuimos</span> </p>
-                    </div>
-                    <div class="tarjeta">
-                    <p>“If I cannot be better than them, I will become so much worse.”
-                        <br> <span class="autores"> Holly Black, The Cruel Prince </span> </p>
-                    </div>
-                    <div class="tarjeta">
-                    <p>“I hope you find someone you can't live without.I really do. And I hope you never have to know what it's like to have to try and live without them.”
-                        <br> <span class="autores">Kiera Cass, The Selection</span> </p>
-                    </div>
-                    <div class="tarjeta">
-                    <p>“Promise me you won't forget this, Poppy. That no matter what happens tomorrow, the next day, next week, you won't forget this, forget that this was real”
-                        <br> <span class="autores">Jennifer L. Armentrout, From Blood and Ash</span> </p>
-                    </div>
-                    <div class="tarjeta">
-                    <p>“That's the point of it, Bryce. Of life. To live, to love, knowing that it might all vanish tomorrow. It makes everything that much more precious.”
-                        <br> <span class="autores">Sarah J. Maas, House of Earth and Blood</span>  </p>
-                    </div>
-                    
-                </div>
-                
-            </main>
+            <div id="app">
+                <p> FirstName : <input v-model = "firstname"/> </p>
+                <p> LastName : <input v-model = "lastname"/> </p>
+                <h1>My name is {{firstname}} {{lastname}}</h1>
+                <input type="text" v-model="nuevoRegistro">
+                <button v-on:click=agregarRegistro()>Registrarse</button>
+
+            </div> 
         </div>
+    </main>
     <footer>
         <div class="redes">
             <a href="https://www.instagram.com/myirishlibrary/" target="_blank">
@@ -81,8 +58,6 @@
                 display="block"
             />
             </a>
-        </div>
-        <div class="redes">
             <a href="https://www.facebook.com/MyIrishLibrary" target="_blank">
             <img
                 src="../imagenes/facebook (1).png"
@@ -97,7 +72,10 @@
         <br /><br /><br /><br /><br /><br /><br /><br />
     
         <p align="center">Copyright© 2022</p>
-    </footer>
+        </footer>   
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
     <script src="../js/script.js"></script>    
+    <script src="../js/registrarse.js"></script>
 </body>
 </html>
