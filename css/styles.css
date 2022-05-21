@@ -215,3 +215,32 @@ main p {
   font-family: 'Handlee';
 }
 
+/* Estilos de formulario */
+.formulario {
+  font-family: 'Square Peg', cursive;
+  font-size: 20px;
+}
+ 
+.submit {
+  padding: 2px;
+}
+
+.submit:hover {
+  padding: 5px 5px;
+  border: 1px solid #888;
+
+  transition-property: all;
+  transition-duration: 0.5s; 
+  transition-timing-function: ease-in-out; 
+}
+.submit {
+  animation-name: cambiarColor;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: 100;
+}
+
+@keyframes cambiarColor {
+  from {background-color: rgb(212, 163, 115);}
+  to {background-color: rgb(254, 250, 224);}
+}
