@@ -48,6 +48,25 @@ body {
   background-attachment: fixed;
   
 }
+/* grid del footer */
+.redes > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  justify-content: center;
+  align-items: center;
+}
+.redes {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 2fr 2fr;
+  gap: 10px;
+}
+.redes .copy {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
 /* Padding para estilos */
 
 body, main, header, footer {
@@ -76,7 +95,7 @@ body, main, header, footer {
   width: 150px;
 }
 
-/* Estilos del grid */
+/* Estilos de las tarjetas del main*/
 
 .contenedor {
   display: flex;
@@ -155,7 +174,6 @@ div p {
   footer {
     flex-direction: column;
   }
-
 }
 
 /*tablet*/
@@ -228,7 +246,6 @@ main p {
 .submit:hover {
   padding: 5px 5px;
   border: 1px solid #888;
-
   transition-property: all;
   transition-duration: 0.5s; 
   transition-timing-function: ease-in-out; 

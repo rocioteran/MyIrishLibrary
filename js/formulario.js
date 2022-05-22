@@ -21,3 +21,16 @@ form.addEventListener('submit', (event) => {
         form.submit()
     }
 })
+let el = document.querySelector('p');
+
+// el.onclick = () => alert('Hola');
+
+el.addEventListener('click', () => {
+    alert('Registro exitoso');
+});
+
+let link = document.querySelector('a');
+link.addEventListener('click', (event) => {
+    event.preventDefault();
+    // console.log(event)
+})

@@ -14,26 +14,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400;700&family=Handlee&family=Raleway:ital,wght@1,300&family=Square+Peg&display=swap" rel="stylesheet">
     <!-- Fin de link de Google fonts -->
+    <!-- Iconos de fontawesome -->
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="blanco">
         <header>
-            <a href="../index.html"> <img src="../imagenes/clover.png" alt="Imagen de clover" class="icono"></a>
+            <a href="../index.html">
+              <img
+                src="../imagenes/clover.png"
+                alt="Imagen de clover"
+                class="icono"
+            /></a>
             <span class="boton-menu">
-                Menú
+              <i class="fa fa-bars"></i>
+              Menú
             </span>
             <nav class="menu ocultar">
-                <ul class="nav_links">
-                    <li><a href="../index.html">Libros</a></li>
-                    <li><a href="quotes.html">Quotes</a></li>
-                    <li><a href="#"></a>Blog</li>
-                    <li><a href="#"></a>Ingresar</li>
-                    <li><a href="registrarse.html"></a>Registrarse</li>
-                </ul>
+              <ul class="nav_links">
+                <li><a href="../index.html">Libros</a></li>
+                <li><a href="../html/quotes.html">Quotes</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Ingresar</a></li>
+                <li><a href="formulario.html">Registrarse</a></li>
+              </ul>
             </nav>
-        </header>
-  
+          </header>  
         <h1 class="titulo_principal p5 texto-centrado">My Irish Library</h1>
             <!-- Insertar imagen de header -->
         <div class="containerFLEX"> 
@@ -46,58 +53,51 @@
                     </div>
                     <div class="tarjeta">
                     <p> “El daño es un efecto colateral de vivir.”
-                        <br> <span class="autores">Alice Kellen, Todo lo que nunca fuimos</span> </p>
+                        <br> <span class="autores"><a href="../html/todoLoQueNuncaFuimos.html">Alice Kellen</a></span> , Todo lo que nunca fuimos</span> </p>
                     </div>
                     <div class="tarjeta">
                     <p>“If I cannot be better than them, I will become so much worse.”
-                        <br> <span class="autores"> Holly Black, The Cruel Prince </span> </p>
+                        <br> <span class="autores"><a href="../html/CruelPrince.html">Holy Black</a></span> , The Cruel Prince </span> </p>
                     </div>
                     <div class="tarjeta">
                     <p>“I hope you find someone you can't live without.I really do. And I hope you never have to know what it's like to have to try and live without them.”
-                        <br> <span class="autores">Kiera Cass, The Selection</span> </p>
+                        <br> <span class="autores"><a href="../html/Selection.html">Kiera Cass</a></span> , The Selection</span> </p>
                     </div>
                     <div class="tarjeta">
                     <p>“Promise me you won't forget this, Poppy. That no matter what happens tomorrow, the next day, next week, you won't forget this, forget that this was real”
-                        <br> <span class="autores">Jennifer L. Armentrout, From Blood and Ash</span> </p>
+                        <br> <span class="autores"><a href="../html/Blood&ash.html">Jennifer L. Armentrout</a></span> , From Blood and Ash</span> </p>
                     </div>
                     <div class="tarjeta">
                     <p>“That's the point of it, Bryce. Of life. To live, to love, knowing that it might all vanish tomorrow. It makes everything that much more precious.”
-                        <br> <span class="autores">Sarah J. Maas, House of Earth and Blood</span>  </p>
+                        <br> <span class="autores"><a href="../html/acomaf.html">Sarah J. Maas</a></span> , House of Earth and Blood</p>
                     </div>
                     
                 </div>
                 
             </main>
         </div>
-    <footer>
-        <div class="redes">
-            <a href="https://www.instagram.com/myirishlibrary/" target="_blank">
-            <img
-                src="../imagenes/instagram (1).png"
-                width="35"
-                height="35"
-                align="right"
-                margin="auto"
-                display="block"
-            />
-            </a>
-        </div>
-        <div class="redes">
-            <a href="https://www.facebook.com/MyIrishLibrary" target="_blank">
-            <img
-                src="../imagenes/facebook (1).png"
-                width="35"
-                height="35"
-                align="right"
-                margin="auto"
-                display="block"
-            />
-            </a>
-        </div>
-        <br /><br /><br /><br /><br /><br /><br /><br />
-    
-        <p align="center">Copyright© 2022</p>
-    </footer>
+        <footer>
+            <div class="redes">
+              <div>
+                <a href="https://www.instagram.com/myirishlibrary/" target="_blank">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div>
+                <a href="https://www.facebook.com/MyIrishLibrary" target="_blank">
+                  <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div>
+                <a href="https://twitter.com" target="_blank">
+                  <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="copy">
+                <p>Copyright© 2022</p>
+              </div>
+          </div>
+        </footer>
     <script src="../js/script.js"></script>    
 </body>
 </html>
