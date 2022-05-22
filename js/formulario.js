@@ -9,14 +9,14 @@ form.addEventListener('submit', (event) => {
         span.textContent = 'Ingresá un nombre válido'
     }  
     const apellido = document.querySelector('#apellido');
-    if (apellido.value = '') {
+    if (apellido.value = ' ') {
         const span = document.querySelector('#error-apellido')
         span.textContent = 'Ingresá un apellido válido'
     }  
     const expresion = /^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/;
     if (!nombre.value.match(expresion)) {
         const span = document.querySelector('#error-email')
-        span.textContent = 'No es un email'
+        span.textContent = 'Ingresá un mail válido'
     } else {
         form.submit()
     }

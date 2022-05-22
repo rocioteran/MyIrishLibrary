@@ -27,6 +27,7 @@ nav ul {
 }
 nav a{
     text-decoration: none;
+    color:rgb(226, 169, 126);
 }
 
 /* Estilos del cuerpo */
@@ -236,7 +237,6 @@ main p {
 /* Estilos de formulario */
 .formulario {
   font-family: 'Square Peg', cursive;
-  font-size: 20px;
 }
  
 .submit {
@@ -244,7 +244,7 @@ main p {
 }
 
 .submit:hover {
-  padding: 5px 5px;
+  padding: 5px 15px;
   border: 1px solid #888;
   transition-property: all;
   transition-duration: 0.5s; 
