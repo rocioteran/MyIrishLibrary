@@ -4,12 +4,12 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     
     const nombre = document.querySelector('#nombre');
-    if (nombre.value == ' ') {
+    if (nombre.value == '') {
         const span = document.querySelector('#error-nombre')
         span.textContent = 'Ingresá un nombre válido'
     }  
     const apellido = document.querySelector('#apellido');
-    if (apellido.value == ' ') {
+    if (apellido.value == '') {
         const span = document.querySelector('#error-apellido')
         span.textContent = 'Ingresá un apellido válido'
     }  
@@ -19,15 +19,21 @@ form.addEventListener('submit', (event) => {
         span.textContent = 'Ingresá un mail válido'
     }
     else {
-        form.submit()
+        //form.submit()
+		alert('Registro exitoso');
+		console.log("Registro Exitoso")
+		form.reset();
     }
 })
-let el = document.querySelector('submit');
+
+
+/*let el = document.querySelector('submit');
 
 el.addEventListener('click', () => {
     alert('Registro exitoso');
     console.log("Registro Exitoso")
 });
+*/
 
 // let link = document.querySelector('a');
 // link.addEventListener('click', (event) => {
