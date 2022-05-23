@@ -239,25 +239,30 @@ main p {
   font-family: 'Square Peg', cursive;
 }
  
-.submit {
-  padding: 2px;
-}
-
 .submit:hover {
+  padding: 2px;
+  animation-name: cambiarColor;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: 100;
   padding: 5px 15px;
   border: 1px solid #888;
   transition-property: all;
   transition-duration: 0.5s; 
   transition-timing-function: ease-in-out; 
 }
-.submit {
-  animation-name: cambiarColor;
+.reset:hover {
+  padding: 2px;
+  animation-name: cambiarColorReset;
   animation-duration: 3s;
-  animation-delay: 2s;
+  animation-delay: 1s;
   animation-iteration-count: 100;
 }
-
 @keyframes cambiarColor {
-  from {background-color: rgb(212, 163, 115);}
+  from {background-color: rgb(181, 212, 115);}
+  to {background-color: rgb(254, 250, 224);}
+}
+@keyframes cambiarColorReset {
+  from {background-color: rgb(212, 142, 115);}
   to {background-color: rgb(254, 250, 224);}
 }

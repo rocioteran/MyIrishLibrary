@@ -48,22 +48,23 @@
     <div class="container">
       <h5 class="p5 texto-centrado">Formulario de registro</h5>
           <form action="#" method="post">
-            <div class="row mb-3">
+            <div class="row">
               <div class="col-sm-6">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                <label for="nombre" class="form-label">Nombre: </label>
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" id="nombre">
                 <span id="error-nombre" style="color:red;"></span>
               </div>
               <div class="col-sm-6">
-              <label for="apellido" class="form-label">Apellido</label>
-              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
-              <span id="error-nombre" style="color:red;"></span>
+              <label for="apellido" class="form-label">Apellido: </label>
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" id="apellido">
+              <span id="error-apellido" style="color:red;"></span>
                 </div>
               </div>
-            <div class="row mb-3">
+            <div class="row">
               <div class="col-sm-6">
-              <label for="email" class="form-label">Email</label>
+              <label for="email" class="form-label">Email: </label>
               <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              <span id="error-email" style="color:red;"></span>
                 </div>
               <div class="col-sm-6">
               <label for="inputPassword6" class="col-form-label">Contraseña: </label>
@@ -73,11 +74,20 @@
               </span>
                 </div>
               </div>
-            <div class="row mb-3">Deseo recibir las novedades y recomendaciones: 
-                <div class="col-sm"><input type="radio" name="recibirNovedades" value="si" checked> Si
+            <div class="row"> 
+              <div class="col">Deseo recibir las novedades y recomendaciones: </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <input type="radio" name="recibirNovedades" value="si" checked> Si
                 <input type="radio" name="recibirNovedades" value="no"> No </p>
               </div>
-            <div class="row mb-3"> ¿Sobre qué géneros te gustaría recibir recomendaciones? 
+            </div>
+            <div class="row"> 
+              <div class="col"> ¿Sobre qué géneros te gustaría recibir recomendaciones? </div>
+            </div>
+            <div class="row">
+             <div class="col">
               <p><input type="checkbox" name="generos" value="thriller"> Thriller
                 <input type="checkbox" name="generos" value="cienciaFiccion"> Ciencia Ficción
                 <input type="checkbox" name="generos" value="fantasia"> Fantasía </p>
@@ -87,10 +97,12 @@
                 <p><input type="checkbox" name="generos" value="historico"> Histórico
                 <input type="checkbox" name="generos" value="noFiccion"> No Ficción
                 <input type="checkbox" name="generos" value="romantico"> Romántico</p>
+                </div>              
               </div>
-            <div class="row mb-3">
-              <label for="idioma">Idioma: </label>
-              <select class="col-sm-3" id="idioma" name="idioma">
+            <div class="row">
+              <div class="col-sm-4">
+              <label for="idioma"> Idioma: </label>
+              <select  id="idioma" name="idioma">
                   <option value="select">Selección</option>
                   <option value="spanish">Español</option>
                   <option value="ingles">Ingles</option>
@@ -98,16 +110,19 @@
                   <option value="portuguese">Portugés</option>
               </select>
               </div>
-            <div class="row mb-3">
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
               <label for="exampleFormControlTextarea1" class="form-label" >Comentarios: </label>
               <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Contanos qué libros te gustaría que agreguemos" rows="3"></textarea>
               </div>
             </div>
-            <input class="submit" type="submit" value="Enviar" p5>
-            <button type="reset" p5>Borrar</button>
-          
+            <div class="row">
+              <div class="col-sm-2"><input class="submit" type="submit" value="Enviar" p5></div>
+              <div class="col-sm-2"><button class="reset" type="reset" p5>Borrar</button></div>
+            </div>
+       </div>
       </form>
-    </div>
     <footer>
         <div class="redes">
           <div>
