@@ -8,18 +8,21 @@ form.addEventListener('submit', (event) => {
         const span = document.querySelector('#error-nombre')
         span.textContent = 'Ingresá un nombre válido'
         formularioOK = false
+        
     }  
     const apellido = document.querySelector('#apellido');
     if (apellido.value == '') {
         const span = document.querySelector('#error-apellido')
         span.textContent = 'Ingresá un apellido válido'
         formularioOK= false
+        
     }  
     const expresion = /^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/;
     if (!email.value.match(expresion)) {
         const span = document.querySelector('#error-email')
         span.textContent = 'Ingresá un mail válido'
         formularioOK = false
+        
     }
     if ( formularioOK == true ) {
         //form.submit()

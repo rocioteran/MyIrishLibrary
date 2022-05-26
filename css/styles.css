@@ -79,6 +79,9 @@ body, main, header, footer {
 .p5{
   padding: 5px;
 }
+.p10{
+  padding: 10px;
+}
 
 /* Estilos de los titulos */
 .texto-centrado{
@@ -137,11 +140,25 @@ div p {
 }
 .autores a {
   text-decoration:none;
+  color:rgb(226, 169, 126);
 }
 .autores:hover {
   font-style: italic;
   font-weight: bold;
   text-decoration: none;
+}
+/* Estilos del nuevo quotes */
+.contenedorQuotes > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+}
+.contenedorQuotes {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 2fr 2fr;
+  gap: 10px;
+  
 }
 
 /*pc*/
@@ -172,9 +189,9 @@ div p {
   iframe {
     padding:0px;
   }
-  footer {
+  /* footer {
     flex-direction: column;
-  }
+  } */
 }
 
 /*tablet*/
@@ -209,6 +226,13 @@ div p {
   }
   aside {
     padding-left: 50px;
+    
+  }
+  .contenedorQuotes {
+    grid-template-columns: auto;
+  }
+  .redes {
+    grid-template-columns: auto;
   }
 }
 
@@ -266,3 +290,4 @@ main p {
   from {background-color: rgb(212, 142, 115);}
   to {background-color: rgb(254, 250, 224);}
 }
+
