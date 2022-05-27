@@ -8,6 +8,7 @@
 }
 .link {
   color: rgb(226, 169, 126);
+  font-size:medium;
 }
 .icono {
 height: 100px;
@@ -131,7 +132,7 @@ aside {
 }
 
 /* Estilos de la pagina de quotes */
-div p {
+.fuenteQuotes {
   font-family: 'Amatic SC', cursive;
   font-size: 20px;
 }
@@ -139,7 +140,7 @@ div p {
   width: 41%;
 }
 .autores a {
-  text-decoration:none;
+  text-decoration: none;
   color:rgb(226, 169, 126);
 }
 .autores:hover {
@@ -147,7 +148,6 @@ div p {
   font-weight: bold;
   text-decoration: none;
 }
-/* Estilos del nuevo quotes */
 .contenedorQuotes > div {
   display: flex;
   flex-direction: row;
@@ -158,7 +158,6 @@ div p {
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: 2fr 2fr;
   gap: 10px;
-  
 }
 
 /*pc*/
@@ -189,9 +188,6 @@ div p {
   iframe {
     padding:0px;
   }
-  /* footer {
-    flex-direction: column;
-  } */
 }
 
 /*tablet*/
@@ -232,7 +228,11 @@ div p {
     grid-template-columns: auto;
   }
   .redes {
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
+  }
+  .redes .copy {
+    grid-column-start: 1;
+    grid-column-end: 1;
   }
 }
 
@@ -241,7 +241,6 @@ iframe {
   margin: auto;
   display: block;
   border-radius: 20px;
-  /* display: flex; */
 }
 
 .imagen-centrada {
@@ -263,17 +262,19 @@ main p {
   font-family: 'Square Peg', cursive;
 }
  
-.submit:hover {
-  padding: 2px;
-  animation-name: cambiarColor;
-  animation-duration: 3s;
-  animation-delay: 1s;
-  animation-iteration-count: 100;
-  padding: 5px 15px;
+#exampleFormControlTextarea1:hover {
+  padding: 20px;
   border: 1px solid #888;
   transition-property: all;
   transition-duration: 0.5s; 
-  transition-timing-function: ease-in-out; 
+  transition-timing-function: ease; 
+}
+.submit:hover {
+  padding: 2px;
+  animation-name: cambiarColorSubmit;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: 100;
 }
 .reset:hover {
   padding: 2px;
@@ -282,7 +283,7 @@ main p {
   animation-delay: 1s;
   animation-iteration-count: 100;
 }
-@keyframes cambiarColor {
+@keyframes cambiarColorSubmit {
   from {background-color: rgb(181, 212, 115);}
   to {background-color: rgb(254, 250, 224);}
 }
@@ -290,4 +291,3 @@ main p {
   from {background-color: rgb(212, 142, 115);}
   to {background-color: rgb(254, 250, 224);}
 }
-

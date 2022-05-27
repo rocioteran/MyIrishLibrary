@@ -17,8 +17,8 @@ form.addEventListener('submit', (event) => {
         formularioOK= false
         
     }  
-    const expresion = /^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/;
-    if (!email.value.match(expresion)) {
+    const validateMail = /^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/;
+    if (!email.value.match(validateMail)) {
         const span = document.querySelector('#error-email')
         span.textContent = 'Ingresá un mail válido'
         formularioOK = false
@@ -31,18 +31,3 @@ form.addEventListener('submit', (event) => {
 		form.reset();
     }
 })
-
-
-/*let el = document.querySelector('submit');
-
-el.addEventListener('click', () => {
-    alert('Registro exitoso');
-    console.log("Registro Exitoso")
-});
-*/
-
-// let link = document.querySelector('a');
-// link.addEventListener('click', (event) => {
-//     event.preventDefault();
-//      console.log(event)
-// })

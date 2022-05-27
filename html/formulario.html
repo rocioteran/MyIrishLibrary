@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
     <!-- Icono pequeño al lado del titulo de la pagina que se verá en la barra de navegador-->
-    <link rel="icon" type="image/jpg" href="..imagenes/clover.png" sizes="64x64" /> 
+    <link rel="icon" type="image/jpg" href="../imagenes/clover.png" sizes="64x64" /> 
     <!-- Link a la hojas de estilos -->
     <link rel="stylesheet" href="../css/styles.css" />
     <!-- Inicio Link de Google fonts -->
@@ -31,95 +31,95 @@
             /></a>
             <span class="boton-menu">
               <i class="fa fa-bars"></i>
-              Menú
+              Menu
             </span>
             <nav class="menu ocultar">
               <ul class="nav_links">
-                <li><a href="../index.html">Libros</a></li>
+                <li><a href="../index.html">Books</a></li>
                 <li><a href="../html/quotes.html">Quotes</a></li>
                 <li><a href="../html/blog.html">Blog</a></li>
-                <li><a href="../html/ingresar.html">Ingresar</a></li>
-                <li><a href="formulario.html">Registrarse</a></li>
+                <li><a href="../html/ingresar.html">Sign in</a></li>
+                <li><a href="formulario.html">Sign up</a></li>
               </ul>
             </nav>
       </header>
   <h1 class="titulo_principal p5 texto-centrado">My Irish Library</h1>
   <div class="formulario">
     <div class="container">
-      <h5 class="p5 texto-centrado">Formulario de registro</h5>
+      <h5 class="p5 texto-centrado">Sign Up</h5>
           <form action="#" method="post">
             <div class="row">
               <div class="col-sm-6">
-                <label for="nombre" class="form-label">Nombre: </label>
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" id="nombre">
-                <span id="error-nombre" style="color:red;"></span>
+                <label for="nombre" class="form-label">Given name: </label>
+                <input type="text" class="form-control" placeholder="Given name" aria-label="First name" id="nombre">
+                <span id="error-nombre" style="color:rgb(230, 57, 70);"></span>
               </div>
               <div class="col-sm-6">
-              <label for="apellido" class="form-label">Apellido: </label>
-              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" id="apellido">
-              <span id="error-apellido" style="color:red;"></span>
+              <label for="apellido" class="form-label">Family name: </label>
+              <input type="text" class="form-control" placeholder="Family name" aria-label="Last name" id="apellido">
+              <span id="error-apellido" style="color:rgb(230, 57, 70);"></span>
                 </div>
               </div>
             <div class="row">
               <div class="col-sm-6">
-              <label for="email" class="form-label">Email: </label>
+              <label for="email" class="form-label">E-mail: </label>
               <input type="text" class="form-control" id="email" placeholder="name@example.com">
-              <span id="error-email" style="color:red;"></span>
+              <span id="error-email" style="color:rgb(230, 57, 70);"></span>
                 </div>
               <div class="col-sm-6">
-              <label for="inputPassword6" class="col-form-label">Contraseña: </label>
-              <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+              <label for="inputPassword6" class="col-form-label">Password: </label>
+              <input type="password" id="inputPassword6"  placeholder="Enter password" class="form-control" aria-describedby="passwordHelpInline">
               <span id="passwordHelpInline" class="form-text">
-                Tiene que tener entre 8 y 20 caracteres.
+                Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
               </span>
                 </div>
               </div>
             <div class="row"> 
-              <div class="col">Deseo recibir las novedades y recomendaciones: </div>
+              <div class="col">Do you want to subscribe to receive news and book recommendations? </div>
             </div>
             <div class="row">
               <div class="col">
-                <input type="radio" name="recibirNovedades" value="si" checked> Si
+                <input type="radio" name="recibirNovedades" value="si" checked> Yes
                 <input type="radio" name="recibirNovedades" value="no"> No </p>
               </div>
             </div>
             <div class="row"> 
-              <div class="col"> ¿Sobre qué géneros te gustaría recibir recomendaciones? </div>
+              <div class="col"> Which genres you are interested to? </div>
             </div>
             <div class="row">
              <div class="col">
-              <p><input type="checkbox" name="generos" value="thriller"> Thriller
-                <input type="checkbox" name="generos" value="cienciaFiccion"> Ciencia Ficción
-                <input type="checkbox" name="generos" value="fantasia"> Fantasía </p>
-                <p><input type="checkbox" name="generos" value="policial"> Policial
+              <p><input type="checkbox" name="generos" value="thriller"> Thriller & Suspense
+                <input type="checkbox" name="generos" value="cienciaFiccion"> Sci - fi
+                <input type="checkbox" name="generos" value="fantasia"> Fantasy </p>
+                <p><input type="checkbox" name="generos" value="policial"> Mystery
                 <input type="checkbox" name="generos" value="distopia"> Distopia
-                <input type="checkbox" name="generos" value="terror"> Terror</p>
-                <p><input type="checkbox" name="generos" value="historico"> Histórico
-                <input type="checkbox" name="generos" value="noFiccion"> No Ficción
-                <input type="checkbox" name="generos" value="romantico"> Romántico</p>
+                <input type="checkbox" name="generos" value="terror"> Horror</p>
+                <p><input type="checkbox" name="generos" value="historico"> Poetry
+                <input type="checkbox" name="generos" value="noFiccion"> No Fiction
+                <input type="checkbox" name="generos" value="romantico"> Romance</p>
                 </div>              
               </div>
             <div class="row">
               <div class="col-sm-4">
-              <label for="idioma"> Idioma: </label>
+              <label for="idioma"> Language: </label>
               <select  id="idioma" name="idioma">
-                  <option value="select">Selección</option>
-                  <option value="spanish">Español</option>
-                  <option value="ingles">Ingles</option>
-                  <option value="italiano">Italiano</option>
-                  <option value="portuguese">Portugés</option>
+                  <option value="select">Select</option>
+                  <option value="spanish">English</option>
+                  <option value="ingles">Spanish</option>
+                  <option value="italiano">Italian</option>
+                  <option value="portuguese">Portuguese</option>
               </select>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6">
-              <label for="exampleFormControlTextarea1" class="form-label" >Comentarios: </label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Contanos qué libros te gustaría que agreguemos" rows="3"></textarea>
+              <label for="exampleFormControlTextarea1" class="form-label" > You can't find the book you looking for? </label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Tell us which book we should add" rows="3"></textarea>
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-2"><input class="submit" type="submit" value="Enviar" p5></div>
-              <div class="col-sm-2"><button class="reset" type="reset" p5>Borrar</button></div>
+              <div class="col-sm-4"><input class="submit" type="submit" value="Submit" p5></div>
+              <div class="col-sm-2"><button class="reset" type="reset" p10>Reset</button></div>
             </div>
        </div>
       </form>
